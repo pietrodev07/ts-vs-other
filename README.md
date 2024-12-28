@@ -1,4 +1,4 @@
-# ts vs go vs bun vs rust vs c
+# `ts` vs `go` vs `rust` vs `c`
 
 ## Setup
 
