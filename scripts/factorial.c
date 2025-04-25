@@ -1,15 +1,9 @@
 #include <stdio.h>
 #include <time.h>
 
-long long factorial(int n) {
-  if (n > 0) {
-    return n * factorial(n - 1);
-  }
+size_t factorial(int n);
 
-  return 1;
-}
-
-int main() {
+int main(void) {
   int iterations = 100000000;
   clock_t start = clock();
 
@@ -23,4 +17,12 @@ int main() {
   printf("[C] Execution time: %.4f ms\n", duration);
   
   return 0;
+}
+
+size_t factorial(int n) {
+  if (n > 0) {
+    return n * factorial(n - 1);
+  }
+
+  return 1;
 }
